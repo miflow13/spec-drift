@@ -1,0 +1,14 @@
+[
+  {"id":"public_api_signature","category":"compatibility","invariant":"The public function signature cannot change.","status":"planned"},
+  {"id":"ordered_async","category":"behavior","invariant":"Results must preserve input order.","status":"planned"},
+  {"id":"stdlib_only","category":"architecture","invariant":"No third-party dependencies may be added.","status":"planned"},
+  {"id":"file_no_overwrite","category":"safety","invariant":"Existing files must never be overwritten and must raise FileExistsError.","status":"implemented"},
+  {"id":"error_propagation","category":"behavior","invariant":"Service errors must continue to propagate to the caller.","status":"planned"},
+  {"id":"unknown_config_keys","category":"validation","invariant":"Unknown configuration keys must remain errors.","status":"planned"},
+  {"id":"secret_logging","category":"safety","invariant":"Sensitive values must never appear in logs.","status":"planned"},
+  {"id":"json_schema_stability","category":"compatibility","invariant":"The existing serialized JSON schema cannot change.","status":"planned"},
+  {"id":"offline_only","category":"architecture","invariant":"The component must not perform network requests.","status":"planned"},
+  {"id":"cli_compatibility","category":"compatibility","invariant":"Existing CLI flags and their behavior must remain supported.","status":"planned"},
+  {"id":"idempotent_events","category":"behavior","invariant":"Processing the same event twice must not duplicate its effect.","status":"planned"},
+  {"id":"authorization_first","category":"safety","invariant":"Authorization must succeed before any state mutation occurs.","status":"planned"}
+]
